@@ -1,0 +1,26 @@
+### 학생정보등록
+POST http://localhost:8000/students HTTP/1.1
+Content-type: application/json
+
+{
+  "name": "김상주",
+  "email": "rlatkdwn@nhnacademy.com",
+  "score": 90,
+  "comment": "잘했어요"
+}
+
+### 학생정보조회
+GET http://localhost:8000/students/{{studentId}} HTTP/1.1
+Content-type: application/json
+
+###학생정보수정
+PUT http://localhost:8000/students/{{studentId}} HTTP/1.1
+Content-type: application/json
+
+{
+  "id": 1,
+  "name": "김학생",
+  "email": "kim.student@nhnacademy.com",
+  "score": 10,
+  "comment": "너무 못했어요"
+}
